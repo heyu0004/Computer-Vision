@@ -1,0 +1,1166 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		018882532F1E4ED5A0E83025 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 889F91C218AC4592A6E0C522 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				286C0604CB144C1290A8C3C4 /* CMake Rules */,
+			);
+			dependencies = (
+				7488063C39DF4B95BA6CBD0D /* PBXTargetDependency */,
+				4BA8861D792D42F397D4B3D0 /* PBXTargetDependency */,
+				4BAA8C4D15CD42C1A7C9263A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		8ED50B76FC3A42C3941F6948 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7593CE22D5E44ED5888452F0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				A5C9317AB25144B0B89B0D46 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00CA1931FF364E548F731A9B /* Convert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40EB0D5F6EAE40A38C899DA6 /* Convert.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		170177CFEA864079A20E91B4 /* filterkernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06E4513140C94622894C2212 /* filterkernel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		215A6A5ECC944EE29DD2C98F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D39132ED7BBE4CE2885E7E1C /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		219297B3D2C84D22B69B5CB5 /* WarpImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76C06E63EF83484099256787 /* WarpImage.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		275EE42A3047493E8ECDA2F1 /* filewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1E2FC49F84DE09BC184DF /* filewriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		28C0597543B34FD8AF1125D5 /* pyramid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D01C833DE84452BB80E9D2A /* pyramid.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2E2BBCD9ADC84DBDA5AA5E31 /* imageformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6ACF8E97B2A447F88DC1A5CD /* imageformat.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2FB571865C7142468F3B187C /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DCBB36CFAB44E488D413E41 /* functions.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		31AC5FB2E88548CEB912BFD0 /* FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46FD1CB737CD434F923D561A /* FileIO.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		42015AB5C0944E57A4BB7E1C /* arguments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C83BC3F16C14809A73B11EC /* arguments.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4AE3FD2EBF6C43FB95C12ED1 /* RefCntMem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F9C9F66B7459787F695A1 /* RefCntMem.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4D82B178E3F74F79A1210640 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F67CE5403D74A209FA085AB /* image.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4DEC3A77EB7F49268ADC1AEA /* faces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CB72B881D884B45B9672984 /* faces.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		67B1E301D31A4C48BF2D25AC /* jacob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9A281B4D7482DA72C3959 /* jacob.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6C50F69BD6804EBAA7557A06 /* user.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 36BBF033AF854EEF89B733C2 /* user.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		76506752273346EA950C03E4 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C1430BAAA425EBEF4B975 /* error.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		813F39194BBB410F8724030A /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1931DF1306C1447CB2D2EE3C /* vector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		916DA81C5EA747FFA95CFF58 /* eigfaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCAEB616AB4B4E43A53719BC /* eigfaces.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9659C346925B44EBA3A89AA6 /* ImageProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D67C2C25A7F4E04AAAE906E /* ImageProc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9DD1B00DB4444DF9B93F40DA /* Convolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48CBE8DF8216460382F8171E /* Convolve.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A6279329FBEF4FE4B4D31242 /* face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1DF9556CA3447E88635BCD1 /* face.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A6CAC5C631F94603B839A262 /* eigenfaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C83AE463644F0A393EE23 /* eigenfaces.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A91BAEE5EBEE43FE8F140C21 /* textfilereader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4E3170124524216B2A1F604 /* textfilereader.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AC9F4774E50E48B3B74A3F4C /* gaussian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E71F8AAB85D741A6ADF639FA /* gaussian.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BC9D132150544559ABB2280A /* Pyramid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C53ED6EFC3604B148AB6E3C1 /* Pyramid.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C6884AECB9444FBF973EDEAA /* commandlinearguments.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 138E51F4D31849C1B77F82E6 /* commandlinearguments.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C72730F2C5064ECB9DFE86F0 /* binaryfilewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 609D8380A7EE41B6AE3C91CB /* binaryfilewriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D56DF7C4E63A4F8CA7BAB8E3 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BEABCF842D6438F8F95C03D /* stdafx.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D85386F7E9B54BACBE83E235 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3A906058B5A4F2AB9488603 /* Transform.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DDCEEDE6CB8248C7997C1E42 /* binaryfilereader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 375B19F20B0648DA82F3FAF4 /* binaryfilereader.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E7C3A1BA29F84FED8E4F2213 /* filereader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A87DDA22FCF4DBAAF460099 /* filereader.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E9C65679B628429393E2AEBC /* array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49BFDDB3A8D7405A8679C1D4 /* array.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F3DBFDA931E049C293D56205 /* users.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D29DA3CA181A4AF7BFA37F5B /* users.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F8212285A2194F5F8F7BC611 /* targa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B800BFC812F464F9133FC4E /* targa.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FFF782E626594D4AA8ABCEF8 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1778A438DBC419DAEC17E74 /* Image.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17A7EAEF5F0546AAB70F902D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5F2F0484D04E2EB8CEA654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ED50B76FC3A42C3941F6948;
+			remoteInfo = ZERO_CHECK;
+		};
+		2D6A606CB00240508A609130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5F2F0484D04E2EB8CEA654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 139A0F1FC637436F8B67D72E;
+			remoteInfo = Eigenface;
+		};
+		69684583453F469F9B397594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5F2F0484D04E2EB8CEA654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ED50B76FC3A42C3941F6948;
+			remoteInfo = ZERO_CHECK;
+		};
+		867887C46C214E62ABBEE51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5F2F0484D04E2EB8CEA654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D63CEC1F6D4402D9DB58E1F;
+			remoteInfo = ImageLib;
+		};
+		EB4DC38A370C47B59FE86621 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5F2F0484D04E2EB8CEA654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D63CEC1F6D4402D9DB58E1F;
+			remoteInfo = ImageLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0138A23233144E00A1EC58E5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		03ED33AB74B141CAAF96475B /* image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = image.h; path = src/image.h; sourceTree = SOURCE_ROOT; };
+		06E4513140C94622894C2212 /* filterkernel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = filterkernel.cpp; path = src/filterkernel.cpp; sourceTree = SOURCE_ROOT; };
+		09C93C40DAB84053A2C46D93 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = ImageLib/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0DB9A281B4D7482DA72C3959 /* jacob.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jacob.cpp; path = src/jacob.cpp; sourceTree = SOURCE_ROOT; };
+		0DCBB36CFAB44E488D413E41 /* functions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = functions.cpp; path = src/functions.cpp; sourceTree = SOURCE_ROOT; };
+		0E0D0E6F585947AE830434B2 /* eigfaces.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = eigfaces.h; path = src/eigfaces.h; sourceTree = SOURCE_ROOT; };
+		0F40F4C4F1DD40FCAAB1B0BB /* commandlinearguments.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = commandlinearguments.h; path = src/commandlinearguments.h; sourceTree = SOURCE_ROOT; };
+		138E51F4D31849C1B77F82E6 /* commandlinearguments.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = commandlinearguments.cpp; path = src/commandlinearguments.cpp; sourceTree = SOURCE_ROOT; };
+		14D2706CD3B44F088770DA71 /* WarpImage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = WarpImage.h; path = ImageLib/WarpImage.h; sourceTree = SOURCE_ROOT; };
+		17ACCBA450EF461287160E19 /* RefCntMem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RefCntMem.h; path = ImageLib/RefCntMem.h; sourceTree = SOURCE_ROOT; };
+		1931DF1306C1447CB2D2EE3C /* vector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector.cpp; path = src/vector.cpp; sourceTree = SOURCE_ROOT; };
+		1AF8AE661B0448BBBEB36A4F /* Eigenface */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Eigenface; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C83BC3F16C14809A73B11EC /* arguments.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arguments.cpp; path = src/arguments.cpp; sourceTree = SOURCE_ROOT; };
+		1CB72B881D884B45B9672984 /* faces.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = faces.cpp; path = src/faces.cpp; sourceTree = SOURCE_ROOT; };
+		1EE566DFC7AF4F839043EDBE /* users.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = users.h; path = src/users.h; sourceTree = SOURCE_ROOT; };
+		2BEABCF842D6438F8F95C03D /* stdafx.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stdafx.cpp; path = src/stdafx.cpp; sourceTree = SOURCE_ROOT; };
+		2C1862AF6D3E4EFEA139F6F7 /* Convolve.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Convolve.h; path = ImageLib/Convolve.h; sourceTree = SOURCE_ROOT; };
+		2C84C223631A4E9DBF29E67F /* filereader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = filereader.h; path = src/filereader.h; sourceTree = SOURCE_ROOT; };
+		2D01C833DE84452BB80E9D2A /* pyramid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pyramid.cpp; path = src/pyramid.cpp; sourceTree = SOURCE_ROOT; };
+		3522726D44224E3DBB393B37 /* error.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = error.h; path = src/error.h; sourceTree = SOURCE_ROOT; };
+		369D5D02C0834F5EB668BB78 /* textfilereader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = textfilereader.h; path = src/textfilereader.h; sourceTree = SOURCE_ROOT; };
+		36BBF033AF854EEF89B733C2 /* user.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = user.cpp; path = src/user.cpp; sourceTree = SOURCE_ROOT; };
+		375B19F20B0648DA82F3FAF4 /* binaryfilereader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = binaryfilereader.cpp; path = src/binaryfilereader.cpp; sourceTree = SOURCE_ROOT; };
+		380BDC2A82D544418C756FEF /* Transform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Transform.h; path = ImageLib/Transform.h; sourceTree = SOURCE_ROOT; };
+		3A1F9C9F66B7459787F695A1 /* RefCntMem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RefCntMem.cpp; path = ImageLib/RefCntMem.cpp; sourceTree = SOURCE_ROOT; };
+		3D3852C64F4C45A2A33294B5 /* pyramid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = pyramid.h; path = src/pyramid.h; sourceTree = SOURCE_ROOT; };
+		40EB0D5F6EAE40A38C899DA6 /* Convert.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Convert.cpp; path = ImageLib/Convert.cpp; sourceTree = SOURCE_ROOT; };
+		414259C43CC142E08B33B222 /* targa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = targa.h; path = src/targa.h; sourceTree = SOURCE_ROOT; };
+		451E9C6DD9DF4DAAB47B1F80 /* ImageProc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImageProc.h; path = ImageLib/ImageProc.h; sourceTree = SOURCE_ROOT; };
+		45489FD6A51D46869F44A708 /* Image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Image.h; path = ImageLib/Image.h; sourceTree = SOURCE_ROOT; };
+		46FD1CB737CD434F923D561A /* FileIO.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FileIO.cpp; path = ImageLib/FileIO.cpp; sourceTree = SOURCE_ROOT; };
+		48CBE8DF8216460382F8171E /* Convolve.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Convolve.cpp; path = ImageLib/Convolve.cpp; sourceTree = SOURCE_ROOT; };
+		49BFDDB3A8D7405A8679C1D4 /* array.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = array.cpp; path = src/array.cpp; sourceTree = SOURCE_ROOT; };
+		4A1C1430BAAA425EBEF4B975 /* error.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = error.cpp; path = src/error.cpp; sourceTree = SOURCE_ROOT; };
+		4B7B89B2989840C6A72255E9 /* functions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = functions.h; path = src/functions.h; sourceTree = SOURCE_ROOT; };
+		4E6C83AE463644F0A393EE23 /* eigenfaces.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = eigenfaces.cpp; path = src/eigenfaces.cpp; sourceTree = SOURCE_ROOT; };
+		4F24E1DA0D4F43C690175850 /* libImageLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libImageLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		591D4C88A7A24827ABBFEBB7 /* Pyramid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Pyramid.h; path = ImageLib/Pyramid.h; sourceTree = SOURCE_ROOT; };
+		5D24A16DB69A4002B895B5D0 /* faces.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = faces.h; path = src/faces.h; sourceTree = SOURCE_ROOT; };
+		609D8380A7EE41B6AE3C91CB /* binaryfilewriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = binaryfilewriter.cpp; path = src/binaryfilewriter.cpp; sourceTree = SOURCE_ROOT; };
+		67A2705C247F44DDBCB36BC2 /* array_old.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = array_old.h; path = src/array_old.h; sourceTree = SOURCE_ROOT; };
+		684199B694E64A92B545908C /* arguments.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = arguments.h; path = src/arguments.h; sourceTree = SOURCE_ROOT; };
+		6A87DDA22FCF4DBAAF460099 /* filereader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = filereader.cpp; path = src/filereader.cpp; sourceTree = SOURCE_ROOT; };
+		6ACF8E97B2A447F88DC1A5CD /* imageformat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imageformat.cpp; path = src/imageformat.cpp; sourceTree = SOURCE_ROOT; };
+		6B800BFC812F464F9133FC4E /* targa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = targa.cpp; path = src/targa.cpp; sourceTree = SOURCE_ROOT; };
+		6BCA8D6E67CA48628F3C7CDA /* gaussian.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gaussian.h; path = src/gaussian.h; sourceTree = SOURCE_ROOT; };
+		6CC1E2FC49F84DE09BC184DF /* filewriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = filewriter.cpp; path = src/filewriter.cpp; sourceTree = SOURCE_ROOT; };
+		741EFF9D452645658444E7D5 /* main.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = main.h; path = src/main.h; sourceTree = SOURCE_ROOT; };
+		75E632333EE543FAB135D4AC /* ImageLib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImageLib.h; path = ImageLib/ImageLib.h; sourceTree = SOURCE_ROOT; };
+		76C06E63EF83484099256787 /* WarpImage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WarpImage.cpp; path = ImageLib/WarpImage.cpp; sourceTree = SOURCE_ROOT; };
+		7B86E6D80D2741CCA8B0A1CE /* resource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = resource.h; path = src/resource.h; sourceTree = SOURCE_ROOT; };
+		838DFE01D0C4459C8B1DE5A3 /* face.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = face.h; path = src/face.h; sourceTree = SOURCE_ROOT; };
+		89CE92EDD60540ABB1CAD2CC /* stdafx.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stdafx.h; path = src/stdafx.h; sourceTree = SOURCE_ROOT; };
+		8D67C2C25A7F4E04AAAE906E /* ImageProc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImageProc.cpp; path = ImageLib/ImageProc.cpp; sourceTree = SOURCE_ROOT; };
+		8EC0D46CC339435CB90B1B95 /* array.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = array.h; path = src/array.h; sourceTree = SOURCE_ROOT; };
+		8EF99172EEFA4659BEB8AC31 /* filterkernel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = filterkernel.h; path = src/filterkernel.h; sourceTree = SOURCE_ROOT; };
+		969C2ADEFE9C4D87ADBBC5A1 /* filewriter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = filewriter.h; path = src/filewriter.h; sourceTree = SOURCE_ROOT; };
+		97297E4A720A478BBD861F4B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9F67CE5403D74A209FA085AB /* image.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image.cpp; path = src/image.cpp; sourceTree = SOURCE_ROOT; };
+		A1778A438DBC419DAEC17E74 /* Image.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Image.cpp; path = ImageLib/Image.cpp; sourceTree = SOURCE_ROOT; };
+		A418E15FDE4B4774A1412178 /* binaryfilewriter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = binaryfilewriter.h; path = src/binaryfilewriter.h; sourceTree = SOURCE_ROOT; };
+		B2DB1FAE4F3D4F0391C9A892 /* user.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = user.h; path = src/user.h; sourceTree = SOURCE_ROOT; };
+		B4E3170124524216B2A1F604 /* textfilereader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = textfilereader.cpp; path = src/textfilereader.cpp; sourceTree = SOURCE_ROOT; };
+		BB03FBDCF7EC4B129ED33773 /* imageformat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imageformat.h; path = src/imageformat.h; sourceTree = SOURCE_ROOT; };
+		BCAEB616AB4B4E43A53719BC /* eigfaces.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = eigfaces.cpp; path = src/eigfaces.cpp; sourceTree = SOURCE_ROOT; };
+		C53ED6EFC3604B148AB6E3C1 /* Pyramid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Pyramid.cpp; path = ImageLib/Pyramid.cpp; sourceTree = SOURCE_ROOT; };
+		D29DA3CA181A4AF7BFA37F5B /* users.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = users.cpp; path = src/users.cpp; sourceTree = SOURCE_ROOT; };
+		D39132ED7BBE4CE2885E7E1C /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		D3A906058B5A4F2AB9488603 /* Transform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Transform.cpp; path = ImageLib/Transform.cpp; sourceTree = SOURCE_ROOT; };
+		D46BFC701ACF4DEAB5F1FAC2 /* vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector.h; path = src/vector.h; sourceTree = SOURCE_ROOT; };
+		E011A7CF564847719CFD5C2D /* binaryfilereader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = binaryfilereader.h; path = src/binaryfilereader.h; sourceTree = SOURCE_ROOT; };
+		E71F8AAB85D741A6ADF639FA /* gaussian.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gaussian.cpp; path = src/gaussian.cpp; sourceTree = SOURCE_ROOT; };
+		E8847301E5DD4366A41A2548 /* jacob.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = jacob.h; path = src/jacob.h; sourceTree = SOURCE_ROOT; };
+		EC13E0EEC61D4B2588A56CCD /* Convert.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Convert.h; path = ImageLib/Convert.h; sourceTree = SOURCE_ROOT; };
+		F1DF9556CA3447E88635BCD1 /* face.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = face.cpp; path = src/face.cpp; sourceTree = SOURCE_ROOT; };
+		F641E7726AF3430480B4A474 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FE53EC4E44444DD0927FDC22 /* FileIO.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FileIO.h; path = ImageLib/FileIO.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		19A337E36148488DA854D3BB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC13E0EEC61D4B2588A56CCD /* Convert.h */,
+				2C1862AF6D3E4EFEA139F6F7 /* Convolve.h */,
+				FE53EC4E44444DD0927FDC22 /* FileIO.h */,
+				45489FD6A51D46869F44A708 /* Image.h */,
+				75E632333EE543FAB135D4AC /* ImageLib.h */,
+				451E9C6DD9DF4DAAB47B1F80 /* ImageProc.h */,
+				591D4C88A7A24827ABBFEBB7 /* Pyramid.h */,
+				17ACCBA450EF461287160E19 /* RefCntMem.h */,
+				380BDC2A82D544418C756FEF /* Transform.h */,
+				14D2706CD3B44F088770DA71 /* WarpImage.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		22B430EE726A43C998836F3F /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				684199B694E64A92B545908C /* arguments.h */,
+				8EC0D46CC339435CB90B1B95 /* array.h */,
+				67A2705C247F44DDBCB36BC2 /* array_old.h */,
+				E011A7CF564847719CFD5C2D /* binaryfilereader.h */,
+				A418E15FDE4B4774A1412178 /* binaryfilewriter.h */,
+				0F40F4C4F1DD40FCAAB1B0BB /* commandlinearguments.h */,
+				0E0D0E6F585947AE830434B2 /* eigfaces.h */,
+				3522726D44224E3DBB393B37 /* error.h */,
+				838DFE01D0C4459C8B1DE5A3 /* face.h */,
+				5D24A16DB69A4002B895B5D0 /* faces.h */,
+				2C84C223631A4E9DBF29E67F /* filereader.h */,
+				969C2ADEFE9C4D87ADBBC5A1 /* filewriter.h */,
+				8EF99172EEFA4659BEB8AC31 /* filterkernel.h */,
+				4B7B89B2989840C6A72255E9 /* functions.h */,
+				6BCA8D6E67CA48628F3C7CDA /* gaussian.h */,
+				03ED33AB74B141CAAF96475B /* image.h */,
+				BB03FBDCF7EC4B129ED33773 /* imageformat.h */,
+				E8847301E5DD4366A41A2548 /* jacob.h */,
+				741EFF9D452645658444E7D5 /* main.h */,
+				3D3852C64F4C45A2A33294B5 /* pyramid.h */,
+				7B86E6D80D2741CCA8B0A1CE /* resource.h */,
+				89CE92EDD60540ABB1CAD2CC /* stdafx.h */,
+				414259C43CC142E08B33B222 /* targa.h */,
+				369D5D02C0834F5EB668BB78 /* textfilereader.h */,
+				B2DB1FAE4F3D4F0391C9A892 /* user.h */,
+				1EE566DFC7AF4F839043EDBE /* users.h */,
+				D46BFC701ACF4DEAB5F1FAC2 /* vector.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		43BC92BDF8B6414EBB34AD89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8AE661B0448BBBEB36A4F /* Eigenface */,
+				4F24E1DA0D4F43C690175850 /* libImageLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6589C38CF9A745F8B811EDB8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E6D2F7C5ABA740829769F84D /* ALL_BUILD */,
+				F9C96DB0104B4C04A25A4124 /* Eigenface */,
+				7876C724214147F7A9185869 /* ZERO_CHECK */,
+				C8AB49A672784BAE9DB2129C /* ImageLib */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		7358D8D0B0CB44B3883F1CFE /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7876C724214147F7A9185869 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				B83593C2B7684185A671DAEA /* CMake Rules */,
+				97297E4A720A478BBD861F4B /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		84B485FDA0E948D9B6366680 = {
+			isa = PBXGroup;
+			children = (
+				6589C38CF9A745F8B811EDB8 /* Sources */,
+				97D70DA27DC245AAAA37F7D0 /* Resources */,
+				43BC92BDF8B6414EBB34AD89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97D70DA27DC245AAAA37F7D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B83593C2B7684185A671DAEA /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C8AB49A672784BAE9DB2129C /* ImageLib */ = {
+			isa = PBXGroup;
+			children = (
+				ED4E24D85D604A9482A9F415 /* Source Files */,
+				19A337E36148488DA854D3BB /* Header Files */,
+				09C93C40DAB84053A2C46D93 /* CMakeLists.txt */,
+			);
+			name = ImageLib;
+			sourceTree = "<group>";
+		};
+		D8B6E0A3625E4271873D3C75 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C83BC3F16C14809A73B11EC /* arguments.cpp */,
+				49BFDDB3A8D7405A8679C1D4 /* array.cpp */,
+				375B19F20B0648DA82F3FAF4 /* binaryfilereader.cpp */,
+				609D8380A7EE41B6AE3C91CB /* binaryfilewriter.cpp */,
+				138E51F4D31849C1B77F82E6 /* commandlinearguments.cpp */,
+				4E6C83AE463644F0A393EE23 /* eigenfaces.cpp */,
+				BCAEB616AB4B4E43A53719BC /* eigfaces.cpp */,
+				4A1C1430BAAA425EBEF4B975 /* error.cpp */,
+				F1DF9556CA3447E88635BCD1 /* face.cpp */,
+				1CB72B881D884B45B9672984 /* faces.cpp */,
+				6A87DDA22FCF4DBAAF460099 /* filereader.cpp */,
+				6CC1E2FC49F84DE09BC184DF /* filewriter.cpp */,
+				06E4513140C94622894C2212 /* filterkernel.cpp */,
+				0DCBB36CFAB44E488D413E41 /* functions.cpp */,
+				E71F8AAB85D741A6ADF639FA /* gaussian.cpp */,
+				9F67CE5403D74A209FA085AB /* image.cpp */,
+				6ACF8E97B2A447F88DC1A5CD /* imageformat.cpp */,
+				0DB9A281B4D7482DA72C3959 /* jacob.cpp */,
+				D39132ED7BBE4CE2885E7E1C /* main.cpp */,
+				2D01C833DE84452BB80E9D2A /* pyramid.cpp */,
+				2BEABCF842D6438F8F95C03D /* stdafx.cpp */,
+				6B800BFC812F464F9133FC4E /* targa.cpp */,
+				B4E3170124524216B2A1F604 /* textfilereader.cpp */,
+				36BBF033AF854EEF89B733C2 /* user.cpp */,
+				D29DA3CA181A4AF7BFA37F5B /* users.cpp */,
+				1931DF1306C1447CB2D2EE3C /* vector.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E6D2F7C5ABA740829769F84D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				7358D8D0B0CB44B3883F1CFE /* CMake Rules */,
+				F641E7726AF3430480B4A474 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		ED4E24D85D604A9482A9F415 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				40EB0D5F6EAE40A38C899DA6 /* Convert.cpp */,
+				48CBE8DF8216460382F8171E /* Convolve.cpp */,
+				46FD1CB737CD434F923D561A /* FileIO.cpp */,
+				A1778A438DBC419DAEC17E74 /* Image.cpp */,
+				8D67C2C25A7F4E04AAAE906E /* ImageProc.cpp */,
+				C53ED6EFC3604B148AB6E3C1 /* Pyramid.cpp */,
+				3A1F9C9F66B7459787F695A1 /* RefCntMem.cpp */,
+				D3A906058B5A4F2AB9488603 /* Transform.cpp */,
+				76C06E63EF83484099256787 /* WarpImage.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F9C96DB0104B4C04A25A4124 /* Eigenface */ = {
+			isa = PBXGroup;
+			children = (
+				D8B6E0A3625E4271873D3C75 /* Source Files */,
+				22B430EE726A43C998836F3F /* Header Files */,
+				0138A23233144E00A1EC58E5 /* CMakeLists.txt */,
+			);
+			name = Eigenface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D63CEC1F6D4402D9DB58E1F /* ImageLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96FB564A343B467A90A7B1E2 /* Build configuration list for PBXNativeTarget "ImageLib" */;
+			buildPhases = (
+				A311C5FD56E54CE7ACF4BD99 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageLib;
+			productName = ImageLib;
+			productReference = 4F24E1DA0D4F43C690175850 /* libImageLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		139A0F1FC637436F8B67D72E /* Eigenface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE32A31937C4250B6BCC8A6 /* Build configuration list for PBXNativeTarget "Eigenface" */;
+			buildPhases = (
+				6A2C3FDB1D28409FB7C70963 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				547BDF946E244EDC8D3793D8 /* PBXTargetDependency */,
+				840893B538294F85AEF7C49D /* PBXTargetDependency */,
+			);
+			name = Eigenface;
+			productName = Eigenface;
+			productReference = 1AF8AE661B0448BBBEB36A4F /* Eigenface */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE5F2F0484D04E2EB8CEA654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 611ED985E89E428A82224B24 /* Build configuration list for PBXProject "Eigenface" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84B485FDA0E948D9B6366680;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				018882532F1E4ED5A0E83025 /* ALL_BUILD */,
+				139A0F1FC637436F8B67D72E /* Eigenface */,
+				8ED50B76FC3A42C3941F6948 /* ZERO_CHECK */,
+				0D63CEC1F6D4402D9DB58E1F /* ImageLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		286C0604CB144C1290A8C3C4 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/heyu/Documents/cplusplus/project3/build_xcode -f /Users/heyu/Documents/cplusplus/project3/build_xcode/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A5C9317AB25144B0B89B0D46 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/heyu/Documents/cplusplus/project3/build_xcode -f /Users/heyu/Documents/cplusplus/project3/build_xcode/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A2C3FDB1D28409FB7C70963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42015AB5C0944E57A4BB7E1C /* arguments.cpp in Sources */,
+				E9C65679B628429393E2AEBC /* array.cpp in Sources */,
+				DDCEEDE6CB8248C7997C1E42 /* binaryfilereader.cpp in Sources */,
+				C72730F2C5064ECB9DFE86F0 /* binaryfilewriter.cpp in Sources */,
+				C6884AECB9444FBF973EDEAA /* commandlinearguments.cpp in Sources */,
+				A6CAC5C631F94603B839A262 /* eigenfaces.cpp in Sources */,
+				916DA81C5EA747FFA95CFF58 /* eigfaces.cpp in Sources */,
+				76506752273346EA950C03E4 /* error.cpp in Sources */,
+				A6279329FBEF4FE4B4D31242 /* face.cpp in Sources */,
+				4DEC3A77EB7F49268ADC1AEA /* faces.cpp in Sources */,
+				E7C3A1BA29F84FED8E4F2213 /* filereader.cpp in Sources */,
+				275EE42A3047493E8ECDA2F1 /* filewriter.cpp in Sources */,
+				170177CFEA864079A20E91B4 /* filterkernel.cpp in Sources */,
+				2FB571865C7142468F3B187C /* functions.cpp in Sources */,
+				AC9F4774E50E48B3B74A3F4C /* gaussian.cpp in Sources */,
+				4D82B178E3F74F79A1210640 /* image.cpp in Sources */,
+				2E2BBCD9ADC84DBDA5AA5E31 /* imageformat.cpp in Sources */,
+				67B1E301D31A4C48BF2D25AC /* jacob.cpp in Sources */,
+				215A6A5ECC944EE29DD2C98F /* main.cpp in Sources */,
+				28C0597543B34FD8AF1125D5 /* pyramid.cpp in Sources */,
+				D56DF7C4E63A4F8CA7BAB8E3 /* stdafx.cpp in Sources */,
+				F8212285A2194F5F8F7BC611 /* targa.cpp in Sources */,
+				A91BAEE5EBEE43FE8F140C21 /* textfilereader.cpp in Sources */,
+				6C50F69BD6804EBAA7557A06 /* user.cpp in Sources */,
+				F3DBFDA931E049C293D56205 /* users.cpp in Sources */,
+				813F39194BBB410F8724030A /* vector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A311C5FD56E54CE7ACF4BD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CA1931FF364E548F731A9B /* Convert.cpp in Sources */,
+				9DD1B00DB4444DF9B93F40DA /* Convolve.cpp in Sources */,
+				31AC5FB2E88548CEB912BFD0 /* FileIO.cpp in Sources */,
+				FFF782E626594D4AA8ABCEF8 /* Image.cpp in Sources */,
+				9659C346925B44EBA3A89AA6 /* ImageProc.cpp in Sources */,
+				BC9D132150544559ABB2280A /* Pyramid.cpp in Sources */,
+				4AE3FD2EBF6C43FB95C12ED1 /* RefCntMem.cpp in Sources */,
+				D85386F7E9B54BACBE83E235 /* Transform.cpp in Sources */,
+				219297B3D2C84D22B69B5CB5 /* WarpImage.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BA8861D792D42F397D4B3D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 139A0F1FC637436F8B67D72E /* Eigenface */;
+			targetProxy = 2D6A606CB00240508A609130 /* PBXContainerItemProxy */;
+		};
+		4BAA8C4D15CD42C1A7C9263A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ED50B76FC3A42C3941F6948 /* ZERO_CHECK */;
+			targetProxy = 17A7EAEF5F0546AAB70F902D /* PBXContainerItemProxy */;
+		};
+		547BDF946E244EDC8D3793D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D63CEC1F6D4402D9DB58E1F /* ImageLib */;
+			targetProxy = EB4DC38A370C47B59FE86621 /* PBXContainerItemProxy */;
+		};
+		7488063C39DF4B95BA6CBD0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D63CEC1F6D4402D9DB58E1F /* ImageLib */;
+			targetProxy = 867887C46C214E62ABBEE51A /* PBXContainerItemProxy */;
+		};
+		840893B538294F85AEF7C49D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ED50B76FC3A42C3941F6948 /* ZERO_CHECK */;
+			targetProxy = 69684583453F469F9B397594 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32823935ABE245608FF8067D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3EA4B7D7C5DB44C3AB2F6725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		420191D3E30B496F9316B8DF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/heyu/Documents/cplusplus/project3/build_xcode/ImageLib/MinSizeRel/libImageLib.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Eigenface;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4807531E8CF8499E8BF83C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		5C5052CD1A4A4B5199FBA7AA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode/build;
+			};
+			name = RelWithDebInfo;
+		};
+		6528A25037844606B6495480 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		65B58FBCD644466A8FB5723D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ImageLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode/ImageLib;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6B647EBF17604F4EA204A270 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/heyu/Documents/cplusplus/project3/build_xcode/ImageLib/RelWithDebInfo/libImageLib.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Eigenface;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6C59220CF09A403299BA9459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ImageLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode/ImageLib;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		8B325181DB284B8A84250293 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		93F4D5A7EAE1451AA4FFA95F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		A2164DCBA58A498C8DA3AA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode/build;
+			};
+			name = Release;
+		};
+		B20DFB840F3D425DAB4A9537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode/build;
+			};
+			name = Debug;
+		};
+		BE82D657228E4E7F82B5EBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11     ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/heyu/Documents/cplusplus/project3/build_xcode/ImageLib/Debug/libImageLib.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Eigenface;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		C0B0D0EEB1FE43F8A2ED4448 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ImageLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode/ImageLib;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D93F57F401154D3AB0BA3ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -std=c++11     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ImageLib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode/ImageLib;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		EF23D413A5064084A9789ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/heyu/Documents/cplusplus/project3/build_xcode/ImageLib/Release/libImageLib.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Eigenface;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		F2F8595A31B2446F8C33B1BE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F79B17D7822448DDAC5F9ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/heyu/Documents/cplusplus/project3,
+					/usr/local/include/eigen3,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		FD445241FCC84F18967CE670 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/heyu/Documents/cplusplus/project3/build_xcode/build;
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		611ED985E89E428A82224B24 /* Build configuration list for PBXProject "Eigenface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20DFB840F3D425DAB4A9537 /* Debug */,
+				A2164DCBA58A498C8DA3AA69 /* Release */,
+				FD445241FCC84F18967CE670 /* MinSizeRel */,
+				5C5052CD1A4A4B5199FBA7AA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7593CE22D5E44ED5888452F0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79B17D7822448DDAC5F9ADC /* Debug */,
+				32823935ABE245608FF8067D /* Release */,
+				8B325181DB284B8A84250293 /* MinSizeRel */,
+				6528A25037844606B6495480 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		889F91C218AC4592A6E0C522 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4807531E8CF8499E8BF83C09 /* Debug */,
+				3EA4B7D7C5DB44C3AB2F6725 /* Release */,
+				F2F8595A31B2446F8C33B1BE /* MinSizeRel */,
+				93F4D5A7EAE1451AA4FFA95F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		96FB564A343B467A90A7B1E2 /* Build configuration list for PBXNativeTarget "ImageLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93F57F401154D3AB0BA3ECF /* Debug */,
+				6C59220CF09A403299BA9459 /* Release */,
+				65B58FBCD644466A8FB5723D /* MinSizeRel */,
+				C0B0D0EEB1FE43F8A2ED4448 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CCE32A31937C4250B6BCC8A6 /* Build configuration list for PBXNativeTarget "Eigenface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE82D657228E4E7F82B5EBFE /* Debug */,
+				EF23D413A5064084A9789ACE /* Release */,
+				420191D3E30B496F9316B8DF /* MinSizeRel */,
+				6B647EBF17604F4EA204A270 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE5F2F0484D04E2EB8CEA654 /* Project object */;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>index.html</title></head><body>
+<h3 style="margin-left: 40px;">cse 559A Computer Vision&nbsp; </h3>
+
+<h3 style="margin-left: 40px;">Project 3 Yu He 445576</h3>
+
+<div style="margin-left: 40px;">
+<h4>1.Testing recognition with cropped class images</h4>
+--compute 10 eigenfaces. <br>
+<img style="width: 45px; height: 45px;" alt="average_face" src="images/Eigenface/average_face.jpg"><br>
+average_face<br>
+<br>
+<img style="width: 44px; height: 44px;" alt="eigen_face_00" src="images/Eigenface/eigen_face_00.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_01" src="images/Eigenface/eigen_face_01.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_02" src="images/Eigenface/eigen_face_02.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_03" src="images/Eigenface/eigen_face_03.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_04" src="images/Eigenface/eigen_face_04.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_05" src="images/Eigenface/eigen_face_05.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_06" src="images/Eigenface/eigen_face_06.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_07" src="images/Eigenface/eigen_face_07.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_08" src="images/Eigenface/eigen_face_08.jpg"><img style="width: 44px; height: 44px;" alt="eigen_face_09" src="images/Eigenface/eigen_face_09.jpg"><br>
+eigenface 1-10<br><br>
+--recognize the photos in the interesting images folder<br>
+<table style="text-align: left; width: 578px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 220px;">number of eigenface<br>
+      </td>
+      <td style="vertical-align: top; width: 32px;">1<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">3<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">5<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">7<br>
+      </td>
+      <td style="vertical-align: top; width: 32px;">9<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">11<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">13<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">15<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">17<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">19<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">21<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 174px;">number of face recognized<br>
+      </td>
+      <td style="vertical-align: top; width: 32px;">7<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">12<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">15<br>
+      </td>
+      <td style="vertical-align: top; width: 30px;">15<br>
+      </td>
+      <td style="vertical-align: top; width: 32px;">15<br>
+      </td>
+      <td style="vertical-align: top; width: 29px;">17<br>
+      </td>
+      <td style="vertical-align: top; width: 21px;">18<br>
+      </td>
+      <td style="vertical-align: top; width: 24px;">19<br>
+      </td>
+      <td style="vertical-align: top; width: 33px;">18<br>
+      </td>
+      <td style="vertical-align: top; width: 33px;">16<br>
+      </td>
+      <td style="vertical-align: top; width: 32px;">16<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+plot above table as below:<br>
+<img style="width: 383px; height: 287px;" alt="plot" src="images/plot.jpg"><br>
+It can be seem from the plot that recognize (correctly) rate rises with
+number of eigenfaces used to decompose and reconstruct faces first and
+declines next. It is not always best to use as many eigenfaces as
+possible since in a small dataset, higher order parameters of eigenface
+becomes very small and sensitive to noise. It is hard to say how many
+eigenfaces leads to best performance, but it is probably a practical
+way to use aroud 20 eigenfaces and do a few of experiments. However,
+the trade-off for big dataset between number of eigenfaces used and
+time for computing eigenfaces also exists and we need to evaluate the
+precision versus efficiency.<br>
+One of the wrong matches (using 15 eigenfaces) is that face
+interesting/02.tga recognized as being closest to face neutral/13.tga
+with&nbsp; MSE 69750.4. <br>
+<img style="width: 57px; height: 69px;" alt="interesting-02" src="images/interesting-02.jpg"><br>
+interesting/02.tga<br>
+<img style="width: 59px; height: 72px;" alt="nuetral-13" src="images/nuetral-13.jpg"><br>
+neutral/13.tga<br>
+This MSE is very big compared to correct matches with a commom MSE
+being under 20000 which is reasonable because face interesting/02 has a
+great face 'distortion' and becomes harder for eigenfaces to describe.
+The true match neutral/02.tga comes at the 3rd in candidate matche list
+which is still an acceptble error range.<br>
+<br>
+list of candidate matches<br>
+<div style="margin-left: 40px;">0: faces/neutral/13; MSE: 69750.4<br>
+1: faces/neutral/05; MSE: 76468.5<br>
+2: faces/neutral/02; MSE: 111633<br>
+3: faces/neutral/08; MSE: 125329<br>
+4: faces/neutral/07; MSE: 159894<br>
+5: faces/neutral/06; MSE: 161319<br>
+6: faces/neutral/01; MSE: 183107<br>
+7: faces/neutral/16; MSE: 210969<br>
+8: faces/neutral/24; MSE: 213548<br>
+9: faces/neutral/03; MSE: 221796<br>
+</div>
+
+<h4>
+2.Cropping and finding faces</h4>
+-- crop the group/test_single.tga image<br>
+Using 15 eigenfaces trained from neutral face, getting below result:<br>
+<br>
+<img style="width: 51px; height: 51px;" alt="cropped_face" src="images/Crop_find_faces/cropped_face.jpg"><br>
+test_single.tga<br>
+<br>
+-- crop my own image<br>
+I used a online image (kobe.jpg) while whatever my scale chages, I
+cannot crop the correct face. The best result I get is where the true
+face comes at the 2nd place in candidate boxes at scale 0.33, which is
+as below:<br>
+<img style="width: 232px; height: 324px;" alt="kobe_mark." src="images/kobe_mark.jpg"><br>
+kobe_mark(marks the best 2 boxes)<br>
+Then I just take the trick to eliminate margin boxes (rule out if the
+box covers any left or&nbsp; margin, 1/10 of the image width, pixels)
+and crop the correct face as below:<br>
+<img style="width: 55px; height: 55px;" alt="kobe_cropped" src="images/kobe_cropped.jpg"><br>
+kobe_cropped<br>
+It is indeed hard to find one best box being the true face using
+eigenface method because the program is easy to get best at plain
+background or clothes area. I tried to use magnitude, variance and
+magnitude/variance to help select the correct box but none of them
+worked well.<br>
+<br>
+-- mark two group photos of students<br>
+Using 15 eigenfaces trained from neutral face, searching scale from
+0.35 to 0.55, step 0.05. Selecting best 4 results from candidates boxes
+which sorted by their
+reconstruction_error*mean_face_diatance/box_vartiance value.<br>
+good results like group/group01.tga and group/group06.tga are as below:<br>
+<br>
+<img style="width: 513px; height: 342px;" alt="cropped_face01" src="images/Crop_find_faces/cropped_face01.jpg"><br>
+group01.tga<br>
+<br>
+<img style="width: 513px; height: 342px;" alt="cropped_face06" src="images/Crop_find_faces/cropped_face06.jpg"><br>
+group06.tga<br>
+<br>
+Actually, testing program on the whole group image folder (17 images),
+only 3 of them missed correct face recognization which are group02.tga
+, group05.tga , group10.tga. These images all have 'titled heads'
+(lower, rise or tilt head) which never show in training dataset
+(neutral faces). Other images have satisfiable results including those
+'grimaced faces' without head skew.<br>
+<br>
+Bad results:<br>
+<br>
+<img style="width: 513px; height: 342px;" alt="cropped_face02" src="images/Crop_find_faces/cropped_face02.jpg"><br>
+group02.tga<br>
+<br>
+<img style="width: 513px; height: 342px;" alt="cropped_face05" src="images/Crop_find_faces/cropped_face05.jpg"><br>
+group05.tga<br>
+<br>
+<img style="width: 513px; height: 342px;" alt="cropped_face10" src="images/Crop_find_faces/cropped_face10.jpg"><br>
+group10.tga<br>
+<br>
+-- try on other group photos<br>
+<img style="width: 509px; height: 363px;" alt="mygroup_mark" src="images/mygroup_mark.jpg"><br>
+my own group photo does not present very good results in find face task, probably because the faces in my group are not alike the training faces or training dataset is not big enough to capture true faces.<br>
+<h4>
+3.Verify Face</h4>--use 15 eigenfaces and userbase files computed
+in problem 1 to find optimal threshold for verification of interesting
+faces to neutral faces.<br>
+I used binary search to find best threshold witch minimizese FP+FN. Start with threshold=60000, experiments as below:<br>
+<br>
+<table style="text-align: left; width: 735px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 103px;">threshold</td>
+      <td style="vertical-align: top; width: 83px;">60000<br>
+      </td>
+      <td style="vertical-align: top; width: 76px;">50000<br>
+      </td>
+      <td style="vertical-align: top; width: 78px;">40000<br>
+      </td>
+      <td style="vertical-align: top; width: 95px;">30000<br>
+      </td>
+      <td style="vertical-align: top; width: 74px;">20000<br>
+      </td>
+      <td style="vertical-align: top; width: 83px;">25000<br>
+      </td>
+      <td style="vertical-align: top; width: 86px;">27500<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 103px;">FP+FN<br>
+      </td>
+      <td style="vertical-align: top; width: 83px;">41<br>
+      </td>
+      <td style="vertical-align: top; width: 76px;">22<br>
+      </td>
+      <td style="vertical-align: top; width: 78px;">16<br>
+      </td>
+      <td style="vertical-align: top; width: 95px;">14<br>
+      </td>
+      <td style="vertical-align: top; width: 74px;">19<br>
+      </td>
+      <td style="vertical-align: top; width: 83px;">15<br>
+      </td>
+      <td style="vertical-align: top; width: 86px;">14<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+Threshold around 27500 to 30000 are approximately the same best thresholds that minimizes false positive+false negative.<br>
+With threshold=27500, false positive rate is FP/(FP+TN)=0/552=0 and false negative rate is FN/(TP+FN)=14/(10+14)=41.7%.<br>
+false negatives are:<br>
+<div style="margin-left: 40px;">Image 'faces/interesting/02.tga' is not a picture of faces/neutral/02's face.<br>
+Image 'faces/interesting/03.tga' is not a picture of faces/neutral/03's face.<br>
+Image 'faces/interesting/04.tga' is not a picture of faces/neutral/04's face.<br>
+Image 'faces/interesting/05.tga' is not a picture of faces/neutral/05's face.<br>
+Image 'faces/interesting/06.tga' is not a picture of faces/neutral/06's face.<br>
+Image 'faces/interesting/07.tga' is not a picture of faces/neutral/07's face.<br>
+Image 'faces/interesting/09.tga' is not a picture of faces/neutral/09's face.<br>
+Image 'faces/interesting/10.tga' is not a picture of faces/neutral/10's face.<br>
+Image 'faces/interesting/12.tga' is not a picture of faces/neutral/12's face.<br>
+Image 'faces/interesting/13.tga' is not a picture of faces/neutral/13's face.<br>
+Image 'faces/interesting/15.tga' is not a picture of faces/neutral/15's face.<br>
+Image 'faces/interesting/16.tga' is not a picture of faces/neutral/16's face.<br>
+Image 'faces/interesting/19.tga' is not a picture of faces/neutral/19's face.<br>
+Image 'faces/interesting/21.tga' is not a picture of faces/neutral/21's face.<br>
+</div>
+<br>
+However, we can achieve minimum FP/(FP+TN)+FN/(TP+FN) by searching
+threshold from 20000 to 60000. I find the minimum FP/(FP+TN)+FN/(TP+FN)
+= 24.63%, optimal threshold being 52000 with FP is 21, FN is 5, TP is
+19, TN is 531.<br>
+<br>
+
+</div>
+
+<br>
+
+<br>
+</body></html>

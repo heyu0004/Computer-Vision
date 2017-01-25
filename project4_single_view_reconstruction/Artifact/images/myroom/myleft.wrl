@@ -1,0 +1,173 @@
+#VRML V2.0 utf8
+
+Collision {
+    collide FALSE
+    children [
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "myback.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.000000 0.000000 1.000000,
+				 0.000000 0.000000 0.000000,
+				 1.000000 0.000000 0.000000,
+				 1.000000 0.000000 0.750000,
+				 1.000000 0.000000 1.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, 4, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.000000 0.000039,
+				 1.000000 -0.000039,
+				 0.999797 1.000139,
+				 0.250825 0.999599,
+				 -0.000622 1.000262,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, 4, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "myfloor.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.000000 0.000000 0.000000,
+				 0.000000 1.000000 0.000000,
+				 1.000000 1.000000 0.000000,
+				 1.000000 0.000000 0.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.000000 -0.000000,
+				 1.000000 0.000000,
+				 1.000000 1.000000,
+				 0.000000 1.000000,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "myright.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 1.000000 0.000000 1.000000,
+				 1.000000 0.000000 0.000000,
+				 1.000000 1.000000 0.000000,
+				 1.000000 1.000000 0.900000,
+				 1.000000 0.750000 1.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, 4, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.004704 -0.018986,
+				 0.995302 -0.002218,
+				 1.001923 1.004535,
+				 0.095254 0.967252,
+				 0.002541 0.794632,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, 4, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "myceil.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.000000 0.750000 1.000000,
+				 0.000000 0.000000 1.000000,
+				 1.000000 0.000000 1.000000,
+				 1.000000 0.750000 1.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.000000 -0.000000,
+				 1.000000 0.000000,
+				 1.000000 1.000000,
+				 0.000000 1.000000,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "myleft.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.000000 1.000000 0.000000,
+				 0.000000 0.000000 0.000000,
+				 0.000000 0.000000 1.000000,
+				 0.000000 0.750000 1.000000,
+				 0.000000 1.000000 0.900000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, 4, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 -0.003024 -0.003599,
+				 0.999714 0.007161,
+				 1.014304 0.990575,
+				 0.210151 1.003028,
+				 0.029801 0.902471,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, 4, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+    ]
+}
