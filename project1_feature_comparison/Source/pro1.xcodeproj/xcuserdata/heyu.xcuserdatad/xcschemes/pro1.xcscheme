@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0730"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ED41CEC81D8A00D8000403D9"
+               BuildableName = "pro1"
+               BlueprintName = "pro1"
+               ReferencedContainer = "container:pro1.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "ED41CEC81D8A00D8000403D9"
+            BuildableName = "pro1"
+            BlueprintName = "pro1"
+            ReferencedContainer = "container:pro1.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "ED41CEC81D8A00D8000403D9"
+            BuildableName = "pro1"
+            BlueprintName = "pro1"
+            ReferencedContainer = "container:pro1.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "computeFeatures /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/graf/img2.ppm /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/graf/img2.f 2"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "matchSIFTFeatures /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/Benchmark/bikes/img1.key /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/Benchmark/bikes/img6.key 10 /Users/heyu/Documents/cplusplus/PackageProject_1/SIFTmatchfile.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "matchFeatures /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/photo/photo1.f /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/photo/photo2.f 0.6 /Users/heyu/Documents/cplusplus/PackageProject_1/matchfile.txt "
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "rocSIFT /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/yosemite/Yosemite1.key /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/yosemite/Yosemite2.key /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/yosemite/H1to2p 2 /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/yosemite/roc_sift.txt /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/yosemite/auc_sift.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "roc /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/graf/img1.f /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/graf/img2.f /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/graf/H1to2p 2 /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/graf/roc_12_my.txt /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/ROC/graf/auc_12_my.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "benchmark /Users/heyu/Documents/cplusplus/PackageProject_1/ImageSets/Benchmark/bikes 2 1"
+            isEnabled = "NO">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "ED41CEC81D8A00D8000403D9"
+            BuildableName = "pro1"
+            BlueprintName = "pro1"
+            ReferencedContainer = "container:pro1.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

@@ -1,0 +1,377 @@
+#VRML V2.0 utf8
+
+Collision {
+    collide FALSE
+    children [
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "vertical.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.961341 0.943108 1.000000,
+				 0.989056 0.944822 1.000000,
+				 0.010944 0.055178 0.000000,
+				 0.038659 0.056892 0.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.027768 -0.000000,
+				 -0.000000 -0.000000,
+				 1.031161 1.684877,
+				 1.003393 1.684877,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "floor.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.000000 0.000000 0.000000,
+				 1.000000 0.000000 0.000000,
+				 1.000000 1.000000 0.000000,
+				 0.000000 1.000000 0.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 1.000000 0.000000,
+				 -0.000000 -0.000000,
+				 0.000000 1.000000,
+				 1.000000 1.000000,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall1.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 1.000000 1.000000 0.000000,
+				 1.000000 1.000000 1.000000,
+				 0.000000 1.000000 1.000000,
+				 0.000000 1.000000 0.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 1.000000 0.000000,
+				 -0.000000 0.000000,
+				 0.000000 1.000000,
+				 1.000000 1.000000,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall2.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.000000 1.000000 0.000000,
+				 0.054012 1.881316 0.000000,
+				 -0.014065 1.621575 1.000000,
+				 0.000000 1.000000 1.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.882970 -0.000000,
+				 -0.000000 0.000000,
+				 0.263419 1.002710,
+				 0.882970 1.000000,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall3.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 -0.133976 1.636553 1.000000,
+				 -0.014065 1.621575 1.000000,
+				 0.054012 1.881316 0.000000,
+				 -0.133976 1.636553 0.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.120843 0.000000,
+				 0.000000 0.000000,
+				 -0.035358 1.070850,
+				 0.120843 1.000000,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall4.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 -0.133976 1.636553 0.000000,
+				 -0.197219 3.131237 0.000000,
+				 -0.197219 3.131237 1.000000,
+				 -0.133976 1.636553 1.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 1.496021 0.000000,
+				 0.000000 0.000000,
+				 0.000000 1.000000,
+				 1.496021 1.000000,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall5.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 -0.984492 7.993778 1.000000,
+				 -0.237886 6.028476 1.000000,
+				 -0.197219 3.131237 1.000000,
+				 -0.133976 1.636553 1.000000,
+				 -0.014065 1.621575 1.000000,
+				 0.000000 1.000000 1.000000,
+				 1.000000 1.000000 1.000000,
+				 1.295633 1.019853 1.000000,
+				 1.484749 0.294386 1.000000,
+				 0.961341 0.943108 1.000000,
+				 0.989056 0.944822 1.000000,
+				 0.306401 0.580437 1.000000,
+				 -0.249778 0.533832 1.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 1.811152 0.033001,
+				 0.831781 -0.121867,
+				 -2.710823 0.336173,
+				 -4.234723 0.515955,
+				 -4.108555 0.445388,
+				 -4.701263 0.522084,
+				 -4.884496 0.008727,
+				 -4.874662 -0.271088,
+				 -6.010378 -0.309067,
+				 -5.490660 0.493705,
+				 -5.455566 0.479720,
+				 -5.175087 0.437052,
+				 -5.080236 0.662475,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall6.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.306401 0.580437 1.000000,
+				 0.961341 0.943108 1.000000,
+				 0.961341 0.943108 3.934628,
+				 0.300000 0.500000 3.934628,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.748650 -0.000000,
+				 -0.000000 -0.000000,
+				 -0.000000 8.612041,
+				 0.793216 8.612041,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall7.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 0.961341 0.943108 1.000000,
+				 1.484749 0.294386 1.000000,
+				 1.480000 0.290000 3.934628,
+				 0.961341 0.943108 3.934628,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.833544 0.000000,
+				 -0.000000 0.000000,
+				 -0.000431 8.612083,
+				 0.833544 8.612041,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall8.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 -0.761735 7.689521 3.934628,
+				 -0.260418 0.505110 3.934628,
+				 -0.249778 0.533832 1.000000,
+				 -0.984492 7.993778 1.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 7.201880 -0.000000,
+				 0.000000 0.000000,
+				 0.027912 8.612201,
+				 7.520905 8.609506,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+ Shape {
+	 appearance Appearance {
+		 texture ImageTexture {
+			 url "wall9.gif"
+		 }
+	 }
+	 geometry IndexedFaceSet {
+		 coord Coordinate {
+			 point [
+				 -0.260418 0.505110 3.934628,
+				 0.300000 0.500000 3.934628,
+				 0.306401 0.580437 1.000000,
+				 -0.249778 0.533832 1.000000,
+			 ]
+		 }
+		 coordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 texCoord TextureCoordinate {
+			 point [
+				 0.560441 0.000000,
+				 0.000000 0.000000,
+				 -0.005667 8.618520,
+				 0.550064 8.614361,
+			 ]
+		 }
+		 texCoordIndex [
+			 0, 1, 2, 3, -1,
+		 ]
+		 solid FALSE
+	 }
+}
+    ]
+}

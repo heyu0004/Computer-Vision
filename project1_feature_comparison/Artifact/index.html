@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>project1</title></head><body style="width: 931px;">
+<h2 style="margin-left: 40px;">cse 559A project1 heyu 445576</h2>
+
+<h3 style="margin-left: 40px;">1.Descriptor SelfDef </h3>
+<div style="margin-left: 40px;">
+I implemented MOPS feature descriptor in a simple manner and add 2 addtional dimensions being normalized gradient.<br>
+
+Prework is to extract extreme points detected with Harris corner detector and then blur the gray image with Gaussian matrix.<br>
+For
+every extreme point, plot a 40x40 window around it and rotates the
+window to the center pixel's gradient angle. This window shold be
+sampled to 8x8 to get low frequency content. Next, calculate the mean
+and variance of pixels inside the window to normalized every pixel in
+8x8 window and finally use pixel value of 8x8 window plus Ix/g and Iy/g
+( where g=sqrt(Ix^2+Iy^2) ) at the point as a descriptor.<br>
+<br>
+</div>
+
+
+<h3 style="margin-left: 40px;">
+2.Choice Explain</h3>
+<div style="margin-left: 40px;">Using normalized gradient can help in
+contrast changing. I read MOPS's paper and find it uses normallized
+pixel value so that I camp up with the idea that adding additional
+information in MOPS descriptor would help improve its performance which
+later was proved to be wrong. MOPS is a local error imparison
+descriptor as it sampled to low frequencey window. It is also rotation
+invariant and illumination invariant. In Fl library there is a
+WarpGlobal
+function that performs rigid, affine, or perspective transforms which
+is useful for MOPS feature descriptors. <br>
+<br>
+</div>
+
+
+<h3 style="margin-left: 40px;">3.Performance Report<br>
+</h3>
+<h4 style="margin-left: 40px;">
+SelfDef descriptor on ROC files<br>
+</h4>
+<div style="margin-left: 40px;">
+1. graf<br>
+<img style="width: 491px; height: 368px;" alt="plot.graf.jpg" src="images/plot.graf.jpg"><br>
+Corresponding Harris points are:<br>
+<img style="width: 510px; height: 388px;" alt="graf_harris" src="images/harris_graf.jpg"><br>
+
+2. yosemite<br>
+<img style="width: 490px; height: 367px;" alt="plot.yosemite" src="images/plot.yosemite.jpg"><br>
+Corresponding Harris points are:<br>
+<img style="width: 510px; height: 388px;" alt="harris" src="images/harris_yose.jpg"><br>
+<br>
+Of all, SIFT performs overwhelmly good. Window descriptor gives
+acceptable outcomes on Yosemite images (simple translation) as well as
+SelfDef
+descriptor but window descriptor is much worse on graf images(affine
+transformation). This
+is beacuse Window descriptor is based merely on neighbour image pixel
+intensity which makes it weak on illuminating change and other
+transformation of target objects while SelfDef descriptor is designed
+to be scale, contrast, illumination, rotation invariante since it
+composes normalized gradient value and uses rotated window.<br>
+<br>
+</div>
+
+
+
+
+
+<h4 style="margin-left: 40px;">
+SelfDef descriptor on Benchmark files<br>
+</h4>
+<div style="margin-left: 40px;">
+
+1.ssd<br>
+SelfDef descriptor<br>
+<table style="text-align: left; width: 662px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 164px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 247px;">average error</td>
+      <td style="vertical-align: top; width: 226px;">average AUC</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 164px;">bikes</td>
+      <td style="vertical-align: top; width: 247px;">401.814648</td>
+      <td style="vertical-align: top; width: 226px;">0.652870</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 164px;">graf</td>
+      <td style="vertical-align: top; width: 247px;">329.560443</td>
+      <td style="vertical-align: top; width: 226px;">0.690947</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 164px;">leuven</td>
+      <td style="vertical-align: top; width: 247px;">367.752286</td>
+      <td style="vertical-align: top; width: 226px;">0.501519</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 164px;">wall</td>
+      <td style="vertical-align: top; width: 247px;">400.220956</td>
+      <td style="vertical-align: top; width: 226px;">0.502023</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+A sad fact is that my modified descriptor is worse than original,
+especially in ssd matching tests. Showing below is the performance
+of&nbsp; MOPS descriptor:<br>
+</div>
+
+<table style="text-align: left; width: 668px; margin-left: 40px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top; width: 244px;">average error</td>
+      <td style="vertical-align: top; width: 230px;">average AUC</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">bikes</td>
+      <td style="vertical-align: top; width: 244px;">403.569898<br>
+</td>
+      <td style="vertical-align: top; width: 230px;">0.730080</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+graf</td>
+      <td style="vertical-align: top; width: 244px;">338.792933 pixels</td>
+      <td style="vertical-align: top; width: 230px;">0.797137</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+leuven</td>
+      <td style="vertical-align: top; width: 244px;">393.207580<br>
+</td>
+      <td style="vertical-align: top; width: 230px;">0.607918</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+wall</td>
+      <td style="vertical-align: top; width: 244px;">417.368032<br>
+</td>
+      <td style="vertical-align: top; width: 230px;"> 0.687132</td>
+    </tr>
+  </tbody>
+</table><br>
+<div style="margin-left: 40px;">2.ratio test <br>
+SelfDef descriptor<br>
+<table style="text-align: left; width: 663px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 151px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 261px;">average error (pixels)</td>
+      <td style="vertical-align: top; width: 225px;">average AUC</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 151px;">bikes</td>
+      <td style="vertical-align: top; width: 261px;">403.527703<br>
+      </td>
+      <td style="vertical-align: top; width: 225px;">0.801169</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 151px;">graf</td>
+      <td style="vertical-align: top; width: 261px;">330.561394<br>
+      </td>
+      <td style="vertical-align: top; width: 225px;">0.734998</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 151px;">leuven</td>
+      <td style="vertical-align: top; width: 261px;">367.752286</td>
+      <td style="vertical-align: top; width: 225px;">0.766872</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 151px;">wall</td>
+      <td style="vertical-align: top; width: 261px;">400.385326</td>
+      <td style="vertical-align: top; width: 225px;">0.660112</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+Same as in ssd tests, my descriptor is worse than MOPS. Given below is the performance of MOPS descriptor:<br>
+</div>
+
+<table style="text-align: left; width: 667px; height: 122px; margin-left: 40px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 161px;"><br>
+
+      </td>
+      <td style="vertical-align: top; width: 250px;">average error (pixels) </td>
+      <td style="vertical-align: top; width: 231px;">average AUC</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 161px;">bikes</td>
+      <td style="vertical-align: top; width: 250px;">404.018034</td>
+      <td style="vertical-align: top; width: 231px;">0.820655</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 161px;">graf</td>
+      <td style="vertical-align: top; width: 250px;">338.792933<br>
+</td>
+      <td style="vertical-align: top; width: 231px;">0.738224</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 161px;">leuven</td>
+      <td style="vertical-align: top; width: 250px;">393.207580</td>
+      <td style="vertical-align: top; width: 231px;">0.783811</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 161px;">wall</td>
+      <td style="vertical-align: top; width: 250px;">417.128169</td>
+      <td style="vertical-align: top; width: 231px;">0.727042</td>
+    </tr>
+  </tbody>
+</table>
+<div style="margin-left: 40px;"><br>
+</div>
+<h4 style="margin-left: 40px;">5x5 Window descriptor on Benchmark files</h4>
+<div style="margin-left: 40px;">
+1.ssd<br>
+</div>
+
+<table style="text-align: left; width: 668px; margin-left: 40px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 167px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 246px;">average error (pixels)</td>
+      <td style="vertical-align: top; width: 229px;">average AUC</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 167px;">bikes</td>
+      <td style="vertical-align: top; width: 246px;">364.638141<br>
+</td>
+      <td style="vertical-align: top; width: 229px;">0.374157</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 167px;">graf</td>
+      <td style="vertical-align: top; width: 246px;">321.807727<br>
+</td>
+      <td style="vertical-align: top; width: 229px;">0.600330<br>
+</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 167px;">leuven</td>
+      <td style="vertical-align: top; width: 246px;">383.248389<br>
+      </td>
+      <td style="vertical-align: top; width: 229px;">nan<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 167px;">wall</td>
+      <td style="vertical-align: top; width: 246px;">380.170806<br>
+</td>
+      <td style="vertical-align: top; width: 229px;"> 0.420994</td>
+    </tr>
+  </tbody>
+</table>
+<div style="margin-left: 40px;"><br>
+
+2.ratio test<br>
+</div>
+
+<table style="text-align: left; width: 667px; margin-left: 40px;" border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 161px;"><br>
+      </td>
+      <td style="vertical-align: top; width: 250px;">average error (pixels)</td>
+      <td style="vertical-align: top; width: 230px;">average AUC</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 161px;">bikes</td>
+      <td style="vertical-align: top; width: 250px;"> 373.958487</td>
+      <td style="vertical-align: top; width: 230px;">0.583835</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 161px;">graf</td>
+      <td style="vertical-align: top; width: 250px;">325.007681</td>
+      <td style="vertical-align: top; width: 230px;">0.745771</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 161px;">leuven</td>
+      <td style="vertical-align: top; width: 250px;">370.922325<br>
+</td>
+      <td style="vertical-align: top; width: 230px;">nan</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 161px;">wall</td>
+      <td style="vertical-align: top; width: 250px;">380.170806<br>
+</td>
+      <td style="vertical-align: top; width: 230px;">0.665255</td>
+    </tr>
+  </tbody>
+</table>
+<div style="margin-left: 40px;"><br>
+
+(nan: represents the algorithm fails on at least one of the images in the set)<br>
+<br>
+
+Benchmark files comforms with ROC files to show ratio test increases
+matching correctness uniformlly and SelfDef descriptor is better at
+blurring and illuminating problems, worse at transformatio tasks. The
+only one of exception is 5x5 window descriptor with ratio test on graf
+files which show surprisingly good results. It dosen't prove that 5x5
+window descriptor is good at transformation.&nbsp;
+
+</div>
+
+<h3 style="margin-left: 40px;">4.Strength and weakness</h3>
+<div style="margin-left: 40px;">
+
+MOPS descriptor performs comparatively good on blurring and
+illuminating changing image sets, like bikes and leuven. But it deals
+not very well with transform changing image sets, like graf and wall.<br>
+</div>
+
+<h3 style="margin-left: 40px;">5.extra credit</h3>
+<div style="margin-left: 40px;">
+1.Implement adaptive non-maximum suppression<br>
+<br>
+By setting a small circle with radius r around Harris point, we search
+for a changing r each time from 1 to some k that makes all detected
+Harris point smaller than 2000. In this way we can avoid similar local
+maximums in a adjacent small area so that interest point are spred more
+evenly on the entire image.<br>
+with non-maximum suppression, MOPS on leuven performance is :<br>
+average error: 313.935243 pixels<br>
+average AUC: 0.829477<br>
+which is a little better than without non-maximum suppression:<br>
+average error: 393.207580<br>
+average AUC: 0.783811<br>
+but it takes really a long time, more than 10 minutes to finish while
+after adding non-maximum suppression it takes just about 1 minute to
+finish.
+</div>
+
+
+
+</body></html>

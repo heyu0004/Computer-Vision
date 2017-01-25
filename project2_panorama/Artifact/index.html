@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>index</title></head><body>
+<h3 style="margin-left: 40px;">cse 559A Computer Vision <br>
+</h3>
+<h3 style="margin-left: 40px;">Project2 heyu 445576</h3>
+
+
+<h4 style="margin-left: 40px;">1.Description</h4>
+<div style="margin-left: 40px;">I followed the routine on course
+website to create panorama. <br>
+1. Transform flat images to spherical
+warp images and extract features. I tried using my self defined feature
+from project 1 in test image yosemite and found standard SIFT feature
+outperformed so I turned to SIFT feature in later 2 panorama tasks. <br>
+2. Match adjacent images with their features. <br>
+3. Use RANSAC to determine best transform matrix parameters between every image
+pair. Because our camera only applies rotation motion, transform
+between each pair is then translation only. <br>
+4. Stitch images
+together and adjust their vertical positions proportional to distance
+from the first image's center to make all images on the same height. <br>
+<br>
+<div style="text-align: left;"><img style="width: 490px; height: 237px;" alt="yosemite_stitch_sift" src="images/yosemite_stitch_sift.jpg"><br>using SIFT feature to stitch yosemite images<br>
+<img style="width: 491px; height: 249px;" alt="yosemite_stitch_mops" src="images/yosesmite_stitch_mops.jpg"><br>using self-defined (mops+gradient) feature to stitch yosemite images<br>
+<br>
+</div>Even the SIFT feature was not perfect in this task while it is
+much better than my self-defined feature. The dismatch pixels may come
+from wrong feature matches and
+improper image warp(or radial distortion removal). <br>
+</div>
+<h4 style="margin-left: 40px;">2.Panorama</h4>
+
+<div style="margin-left: 40px;"><span style="font-weight: bold;">(1) campus</span> <br>
+<img style="width: 924px; height: 154px;" alt="campus" src="images/campus_panorama.jpg"><br><a href="images/campus.html" target="_self">
+High Resolution</a><br>
+<br><span style="font-weight: bold;">(2) my photo</span><br>
+<img style="width: 925px; height: 114px;" alt="photo" src="images/photo_panorama.jpg"><br>
+<a href="images/photo.html" target="_self">High Resolution</a><br>
+<br>Stitch worked well on (1) image, there are few dismatch pixels but the brightness of the images is inconsistent.<br>
+Stitch worked not so well on (2) image, ghosts and dismatch pixels
+exist. This is because I did not do radial distortion removal on my own
+photos and there are probably several wrong feature matches which
+degradates translation prediction. But the brightness is very balance
+this time.(I took&nbsp; photos with a small elevation angle which made
+images looked a little uncomfortable).<br>
+</div>
+</body></html>
